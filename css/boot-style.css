@@ -1,0 +1,295 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  padding: 10px;
+  background-color: #222222; 
+  color: #cccccc;
+}
+
+#app-navbar {
+    border: none;
+}
+
+#app-navbar .col-md-12 {
+    padding: 10px;
+}
+
+.navbar-fixed-top .container-fluid {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar-fixed-top .glyphicon {
+    margin-right: 10px;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+#accent {
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#page-content {
+    padding-top: 75px;;
+}
+
+
+
+#drag-area {
+    cursor: -webkit-grab;
+    cursor: pointer;
+}
+
+.modal-dialog-center { /* Edited classname 10/03/2014 */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+li .glyphicon {
+    margin-right: 10px;
+}
+
+#cover-letter-icon {
+  font-size: 30px;
+}
+
+#cover-letter-icon:hover {
+    color: #c9302c;
+}
+
+#send-fax-div .form-group {
+    padding: 5px 0 5px 0;
+}
+
+.form-group .media {
+    margin-top: 0;
+}
+
+.contact_button {
+    color: #449d44;
+    position: absolute;
+    display: none;
+    top: 27px;
+    right: 8px;
+    margin: 0px 0px;
+    cursor: -webkit-grab;
+    cursor: pointer;
+ }
+ 
+ .contact_button:hover {
+    color: #449d44;
+}
+ 
+ .contact_added {
+    color: #449d44;
+    display: none;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+    margin: 0px 0px;
+}
+
+.recipient_number_check {
+    color: #449d44;
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 8px;
+    margin: 0px 0px;
+}
+ 
+ .hidden_div{
+    display: none;
+ }
+ 
+ #number_div_adder{
+    color: #449d44;
+    position: absolute;
+    top: 9px;
+    left: -17px;
+    cursor: -webkit-grab;
+    cursor: pointer;
+     
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+     
+ }
+ 
+ #number_div_adder:hover {
+     color:#449d44;
+ }
+ 
+ .number_div_remover{
+    color:#c9302c;
+    position:absolute;
+    display:none;
+    top: 27px;
+    left: -17px;
+    cursor: -webkit-grab;
+    cursor: pointer;
+    display: none;
+     
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+ }
+ 
+ .number_div_remover:hover {
+     color:#c9302c;
+ }
+ 
+ .add_to_recipient_number{
+     display: none;
+ }
+ 
+ #forward_preview_image:hover{
+     opacity: 0.5;
+     cursor: pointer;
+ }
+
+ #logo_browse_button{
+     position:absolute;
+     top: 65px;
+     right:17px;
+ }
+ 
+tr { 
+    height: 40px;
+} 
+
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.dropdown-menu{
+    cursor: -webkit-grab;
+    cursor: pointer;
+}
+
+#recent .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    cursor: pointer;
+}
+
+#nav-logout {
+    display: none;
+}
+
+#contacts-fax-number {
+    min-width: 100px;
+}
+
+#contacts-btn-drop {
+    min-width: 75px;
+}
+
+
+table {
+    width: 100%;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 30px;
+
+    text-align: left;
+}
+
+tbody {
+    height: 300px;
+    overflow-y: auto;
+}
+
+thead {
+    /* fallback */
+}
+
+
+tbody td, thead th {
+    width: 14.28571428571429%;
+    float: left;
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media(max-width : 480px) {
+    #page-content {
+        padding-top: 0px;;
+    }
+    
+    #recent  {
+        display: none;
+    }
+    
+    #accent {
+        display: none;
+    }
+    
+    #drag-area {
+        display: none;
+    }
+    
+    #nav-logout {
+        display: initial;
+    }
+}
+/*    #c_footer {
+        word-break: break-all;
+        white-space: normal;
+    }*/
+
+@media (max-width: 767px) {
+  .modal-dialog-center { /* Edited classname 10/03/2014 */
+    width: 100%;
+  }
+} 
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+

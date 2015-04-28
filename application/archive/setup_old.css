@@ -1,0 +1,801 @@
+/* CSS Document */
+
+/* ----------------------------- START Header/Footer Template CSS ----------------------------- */
+html, body {
+	height: 100%;
+}
+
+a img { border: none; }
+button:focus {outline:0;}
+
+.min-width-container {
+	width: 1056px;
+	margin: 0 auto;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.clear {
+	clear:both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+body {
+	margin: 0 20px;
+	font-family: "Source Sans Pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #585858;
+	line-height: 28px;
+	-webkit-font-smoothing: antialiased;
+	min-width: 1056px;
+}
+
+#main-wrapper {
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#main-header {
+	height: 78px;
+	line-height: 78px;
+	min-width: 1056px;
+	margin: 0 -20px 0px;
+	padding: 0 20px;
+}
+
+#accent-header {
+	height: 40px;
+	z-index: 0;
+	top: 78px;
+	min-width: 1056px;
+	margin: 0 -20px 0px;
+	padding: 0 20px;
+	border-bottom-color: transparent;
+	background: #bebebe;
+}
+
+#accent-header p{
+	color: #000;
+	font-size:14px;
+	margin: 0px;
+	margin-right: 35px;
+	padding: 0px;
+	line-height: 40px;
+	float: right;
+}
+
+#main-header.home-header {
+	border-bottom-color: transparent;
+	background: #404040;
+}
+
+#main-header #main-nav-left {
+	float:left;
+}
+
+#main-header #main-nav-right {
+	line-height: 30px;
+	float: right;
+}
+
+#main-header #main-nav-left, 
+#main-header #main-nav-right {
+	display: inline-block;
+}
+
+#main-header #main-nav-left .main-nav-ul, 
+#main-header #main-nav-right .main-nav-ul {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#main-header #main-nav-right .main-nav-ul .main-nav-li {
+	display: inline-block;
+	padding-top: 40px;
+	margin-right: 30px;
+	margin-top: 5px;
+}
+
+.home {
+	background:url(/img/nav-icons.png) no-repeat top center;
+	background-position: -18px 0px;
+}
+
+.manage {
+	background:url(/img/nav-icons.png) no-repeat top center;
+	background-position: -103px 0px;
+}
+
+.logs {
+	background:url(/img/nav-icons.png) no-repeat top center;
+	background-position: -175px 0px;
+}
+
+.billing {
+	background:url(/img/nav-icons.png) no-repeat top center;
+	background-position: -252px 0px;
+}
+
+.account {
+	background:url(/img/nav-icons.png) no-repeat top center;
+	background-position: -312px 0px;
+}
+
+
+#main-header.home-header #main-nav-right .main-nav-ul .main-nav-li .right-nav-link {
+	color: #FFF;
+	font-size:14px;
+	text-decoration: none;
+	line-height: 15px;
+	padding: 2px 5px 2px 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+}
+
+#main-header.home-header #main-nav-right .main-nav-ul .main-nav-li .right-nav-link:hover {
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background-color: rgba(169,68,66,0.8);
+    color: #ffffff;
+	padding: 2px 5px 2px 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+} 
+
+#main-header #main-nav-left .main-nav-ul .main-nav-li:first-child {
+	margin-left: 180px;
+}
+
+#main-header.home-header #main-nav-left #logo {
+	position: absolute;
+	margin-top: 17px;
+	line-height: normal;
+}
+
+#front-page {
+	margin-top: 100px;
+}
+
+
+.page-content {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+#front-page #top-bg {
+	top: -300px;
+	height: 708px;
+	background-image: url("/img/landing-bg.jpg");
+	-webkit-box-shadow: 0px 3px 43px -4px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 3px 43px -4px rgba(0,0,0,0.33);
+	box-shadow: 0px 3px 43px -4px rgba(0,0,0,0.33);
+}
+
+.page-content #top-bg {
+	position: absolute;
+	left: -20px;
+	right: -20px;
+	top: -70px;
+	z-index: -1;
+	background-size: cover;
+	background-position: center;
+}
+
+
+#main-footer-wrapper {
+	position: fixed;
+	width: 100%;
+   	bottom:0;
+	margin: 0 -20px;
+	background: #393939;
+}
+
+#main-footer-top {
+	font-size: 11px;
+	color: #ebebeb;
+	padding: 5px 0 5px 0;
+}
+
+/* ----------------------------- END Header/Footer Template CSS ----------------------------- */
+
+/* ----------------------------- START auth/login Template CSS ----------------------------- */
+
+.login-card {
+  padding: 40px;
+  width: 274px;
+  background-color: #F7F7F7;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.login-card h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.login-card input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-card input[type=text], .login-card input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.login-card input[type=text]:hover, .login-card input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.login {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.login-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.login-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+
+.login-card a:hover {
+  opacity: 1;
+}
+
+.login-help {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+#infoMessage p{
+	margin: 0px;
+}
+/* ----------------------------- END auth/login Template CSS ----------------------------- */
+
+/*----------------------------- Start Alert CSS -----------------------------*/
+
+/* 
+	Controller: Many
+	View: Many
+	Purpose: Formats the boxes used frequently
+*/
+
+#alert-box {
+	margin-top: 15px;
+}
+.alert-warning {
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+}
+
+.alert-success {
+	background-color: #e9f5e4;
+	border-color: #41BF4B;
+	color: #228E19;
+}
+.alert {
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.close {
+	position: relative;
+	top: -2px;
+	right: -10px;
+	color: inherit;
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	-webkit-appearance: none;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .2;
+	filter: alpha(opacity=20);
+}
+
+/*----------------------------- End Alert CSS -----------------------------*/
+
+/* ----------------------------- START page-name CSS ----------------------------- */
+
+.page-name {
+	font-size: 28px;
+}
+
+/* ----------------------------- END page-name  CSS ----------------------------- */
+
+
+
+/* ----------------------------- START Dropzone Template CSS ----------------------------- */
+
+
+#step-one {
+	margin: 10px 0px 10px 0px;
+}
+
+#step-two {
+	margin: 10px 0px 10px 0px;
+}
+
+#faxSubmit input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 380px;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+#faxSubmit input[type="text"]:focus {
+  outline: none;
+}
+
+#step-three {
+	margin: 10px 0px 10px 0px;
+}
+
+#step-one-icon {
+	background-image: url(/img/one-icon.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+
+#step-two-icon {
+	background-image: url(/img/two-icon.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+
+#step-three-icon {
+	background-image: url(/img/three-icon.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+}
+
+#drag-area {
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	background-color:rgba(229,229,229,.30);
+	border: 1px dashed #bebebe;
+	width: 250px; 
+	height:30px;
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.fileupload-button {
+	-moz-box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c2c2c2), color-stop(1, #878f8f));
+	background:-moz-linear-gradient(top, #c2c2c2 5%, #878f8f 100%);
+	background:-webkit-linear-gradient(top, #c2c2c2 5%, #878f8f 100%);
+	background:-o-linear-gradient(top, #c2c2c2 5%, #878f8f 100%);
+	background:-ms-linear-gradient(top, #c2c2c2 5%, #878f8f 100%);
+	background:linear-gradient(to bottom, #c2c2c2 5%, #878f8f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c2c2c2', endColorstr='#878f8f',GradientType=0);
+	background-color:#c2c2c2;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #999999;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #9c9c9c;
+}
+
+.fileupload-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #878f8f), color-stop(1, #c2c2c2));
+	background:-moz-linear-gradient(top, #878f8f 5%, #c2c2c2 100%);
+	background:-webkit-linear-gradient(top, #878f8f 5%, #c2c2c2 100%);
+	background:-o-linear-gradient(top, #878f8f 5%, #c2c2c2 100%);
+	background:-ms-linear-gradient(top, #878f8f 5%, #c2c2c2 100%);
+	background:linear-gradient(to bottom, #878f8f 5%, #c2c2c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#878f8f', endColorstr='#c2c2c2',GradientType=0);
+	background-color:#878f8f;
+}
+
+.fileupload-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.sendfax-btn {
+	-moz-box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c2c2c2), color-stop(1, #af1111));
+	background:-moz-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:-webkit-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:-o-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:-ms-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:linear-gradient(to bottom, #ec1a1a 5%, #af1111 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec1a1a', endColorstr='#af1111',GradientType=0);
+	background-color:#ec1a1a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #999999;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	width: 115px;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #9c9c9c;
+}
+
+.sendfax-btn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #af1111), color-stop(1, #ec1a1a));
+	background:-moz-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:-webkit-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:-o-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:-ms-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:linear-gradient(to bottom, #af1111 5%, #ec1a1a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#af1111', endColorstr='#ec1a1a',GradientType=0);
+	background-color:#af1111;
+}
+
+/* ----------------------------- END Dropzone Template CSS ----------------------------- */
+
+
+/* ----------------------------- END Fax History Template CSS ----------------------------- */
+
+
+#clock-icon {
+	margin-left: 20px;
+}
+
+
+#magnify-icon {
+	padding-top: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#resend-icon {
+	padding-top: 5px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.faxhistory-tbl {
+	border-collapse:collapse;
+	margin:0px;
+	padding:0px;
+	border:1px solid #d8d4d4;
+	width: 100%;
+	-moz-border-radius-bottomleft:8px;
+	-webkit-border-bottom-left-radius:8px;
+	border-bottom-left-radius:8px;
+	
+	-moz-border-radius-bottomright:8px;
+	-webkit-border-bottom-right-radius:8px;
+	border-bottom-right-radius:8px;
+	
+	-moz-border-radius-topright:8px;
+	-webkit-border-top-right-radius:8px;
+	border-top-right-radius:8px;
+	
+	-moz-border-radius-topleft:8px;
+	-webkit-border-top-left-radius:8px;
+	border-top-left-radius:8px;
+}.faxhistory-tbl table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.faxhistory-tbl tr:last-child td:last-child {
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.faxhistory-tbl table tr:first-child td:first-child {
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;
+	border-top-left-radius:4px;
+}
+.faxhistory-tbl table tr:first-child td:last-child {
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;
+	border-top-right-radius:4px;
+}.faxhistory-tbl tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;
+	border-bottom-left-radius:4px;
+}.faxhistory-tbl tr:hover td{
+	
+}
+.faxhistory-tbl tr:nth-child(odd){ background-color:#eeeff0; }
+.faxhistory-tbl tr:nth-child(even)    { background-color:#ffffff; }.faxhistory-tbl td{
+	padding: 2px;
+	font-size:14px;
+}.faxhistory-tbl tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.faxhistory-tbl tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.faxhistory-tbl tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.faxhistory-tbl tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.faxhistory-tbl tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+
+/* ----------------------------- START Setup Page CSS ----------------------------- */
+
+#wrapper {
+	margin: 0 auto; 
+	width: 1000px;
+	padding: 40px;
+	background-color: #F7F7F7;
+	margin: 0 auto 10px;
+	border-radius: 2px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.badge-wrapper {
+	margin: 0 auto; 
+	width: 1000px;
+	padding: 5px;
+	margin: 0 auto 5px;
+	overflow: hidden;
+}
+
+.form_table td {
+	font-size: 18px;
+}
+
+.next-button {
+	-moz-box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	box-shadow:inset 0px 1px 3px 0px #c7cfce;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c2c2c2), color-stop(1, #af1111));
+	background:-moz-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:-webkit-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:-o-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:-ms-linear-gradient(top, #ec1a1a 5%, #af1111 100%);
+	background:linear-gradient(to bottom, #ec1a1a 5%, #af1111 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec1a1a', endColorstr='#af1111',GradientType=0);
+	background-color:#ec1a1a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #999999;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	width: 200px;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 11px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #9c9c9c;
+}
+
+.next-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #af1111), color-stop(1, #ec1a1a));
+	background:-moz-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:-webkit-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:-o-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:-ms-linear-gradient(top, #af1111 5%, #ec1a1a 100%);
+	background:linear-gradient(to bottom, #af1111 5%, #ec1a1a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#af1111', endColorstr='#ec1a1a',GradientType=0);
+	background-color:#af1111;
+}
+
+.form-control {
+	display: block;
+	width: 300px;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form_select {
+	height: 44px;
+	font-size: 16px;
+	width: 320px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	/* border-radius: 2px; */
+	padding: 0 8px;
+}
+
+.form_exp_month {
+	height: 44px;
+	font-size: 16px;
+	width: 120px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	/* border-radius: 2px; */
+	padding: 0 8px;
+}
+
+.form_exp_year {
+	height: 44px;
+	font-size: 16px;
+	width: 100px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	/* border-radius: 2px; */
+	padding: 0 8px;
+}
+
+.form_input {
+	height: 44px;
+	font-size: 16px;
+	width: 300px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	/* border-radius: 2px; */
+	padding: 0 8px;
+}
+
+.form_text_area {
+	font-family: "Source Sans Pro",sans-serif;
+	height: 88px;
+	font-size: 16px;
+	width: 500px;
+	margin-bottom: 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+	/* border-radius: 2px; */
+	padding: 0 8px;
+}
+
+.form_input:hover {
+	border: 1px solid #b9b9b9;
+	border-top: 1px solid #a0a0a0;
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+
+#step_one {
+	margin: 0 0 0 120px;
+}
+
+#step_two {
+	margin: 0 0 0 120px;
+}
+
+#step_three {
+	margin: 0 0 0 120px;
+}
+
+.step_left {
+	width: 425px;
+	float: left;
+}
+
+.step_right {
+	width: 425px;
+	float: left;
+}
+
+.valid {
+	border: 1px solid #3ADB42;
+}
+
+.valid:hover {
+	border: 1px solid #3ADB42;
+}
+
+.invalid {
+	color: #FF5B5E;
+	font-size: 14px;
+}
